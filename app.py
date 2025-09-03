@@ -12,7 +12,7 @@ if st.button("Generate"):
     if topic.strip() != "":
         with st.spinner("Generating..."):
             blog = generate_blog_post(topic)
-            humanized = humanize_text(blog)
+            humanized = humanize_text(blog) #sjs
 
         st.subheader("📝 AI-Generated Blog Post")
         st.write(blog)
